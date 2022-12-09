@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 6vw;
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    padding: 0 35vw;
+}
+nav ul{
+    list-style: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.container{
+    /* padding-left: 5vw; */
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#next{
+    padding: 5px 0;
+}
+.box:hover{
+    background-color: rgb(207, 242, 222);
+    cursor: pointer;
+}
+.gameInfo{
+    padding: 0 5vw;
+}
+.imgbox img{
+    width: 0;
+    transition: 1s ease-in-out;
+
+}
+.bl{
+    border-left: 0;
+}
+.br{
+    border-right: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+button{
+    text-align: center;
+    font-size: 2vw;
+    padding: 5px;
+    background-color: rgb(235, 236, 176);
+    border: 2px solid red;
+    border-radius: 4px;
+}
+button:active {
+    /* background-color: #eaf0ca; */
+    box-shadow: 0 5px rgb(196, 132, 132);
+    transform: translateY(4px);
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    width: 15vw;
+    border: 2px solid red;
+    text-align: center;
+    margin: 3vh 0;
+    font-size: 3vw;
+}
+@media screen and (max-width:950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gameInfo{
+        margin: 5vh 0;
+    }
+}
